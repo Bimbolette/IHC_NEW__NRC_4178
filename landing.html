@@ -7,12 +7,18 @@
     <title>HTML + CSS</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles2.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
   </head>
   <body>
     <nav class="topheader">
       <a href="" class="logo">
         <img width="" height="" src="img/images.png" alt="" />
       </a>
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+        <!-- Ícono de hamburguesa -->
+      </button>
 
       <ul class="Menu-Horizontal">
         <li><a href="">Promociones</a></li>
@@ -36,58 +42,55 @@
     <section class="seccion-top">
       <div class="div-gnral-top">
         <div class="div-top-texto">
-          <h2>Descubre lo nuevo de nuestro Top Semanal!!</h2> 
-          <p> 
-            En esta sección, dejate sorprender con nuestras principales recomendaciones
-            de la semana, recetas sugeridas y votadas por otros usuarios que las colocan
-            en este top!
+          <h2>Descubre lo nuevo de nuestro Top Semanal!!</h2>
+          <p>
+            En esta sección, dejate sorprender con nuestras principales
+            recomendaciones de la semana, recetas sugeridas y votadas por otros
+            usuarios que las colocan en este top!
           </p>
           <p>
-            Recuerda que tu receta tambien puede aparecer en este ranking!
-            Solo tienes que registrarte y subir la preparación de tu platillo favorito
-            para empezar a compartir con el resto de usuarios.
+            Recuerda que tu receta tambien puede aparecer en este ranking! Solo
+            tienes que registrarte y subir la preparación de tu platillo
+            favorito para empezar a compartir con el resto de usuarios.
           </p>
           <button>Leer más...</button>
-        </div> 
+        </div>
 
         <div class="div-top-img">
-            <img src="Logo/rankin.png" alt=""/>
-        </div> 
-
-      </div>  
+          <img src="Logo/rankin.png" alt="" />
+        </div>
+      </div>
     </section>
 
     <!--SECCION RECETAS-->
-    
+
     <section class="seccion-receta">
       <div class="div-gnral-receta">
         <div class="div-receta-texto">
-          <h2>Descubre nuevas recetas!!</h2> 
+          <h2>Descubre nuevas recetas!!</h2>
           <p>
-            En esta sección, puedes descubrir nuevas e interesantes propuestas que te pueden llegar a interesar.
-            Animate a preparar estas recetas compartidas por otros usuarios
+            En esta sección, puedes descubrir nuevas e interesantes propuestas
+            que te pueden llegar a interesar. Animate a preparar estas recetas
+            compartidas por otros usuarios
           </p>
-          <p>
-           
-          </p>
-        </div> 
+          <p></p>
+        </div>
 
         <div class="div-receta-video">
-          <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/cHZwDOqPPdM?si=cpywkfIzSSKLN2lZ" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/cHZwDOqPPdM?si=cpywkfIzSSKLN2lZ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
           ></iframe>
-        </div> 
+        </div>
+      </div>
+    </section>
 
-      </div>  
-    </section> 
-    
     <!--FORMULARIO-->
     <section class="Seccion-formulario" id="Contactanos">
       <div class="div-cont-formulario">
@@ -97,7 +100,12 @@
           <!--campo nombre-->
           <div class="campo">
             <label for="nombre">Nombres Completos:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+            />
           </div>
           <!--campo lista desplegable-->
           <div class="campo">
@@ -113,21 +121,61 @@
           <div class="campo">
             <label>Intereses:</label>
             <ul class="lista-checkbox">
-              <li><label><input type="checkbox" name="Intereses" value="a">Noooo</label></li>
-              <li><label><input type="checkbox" name="Intereses" value="b">copie</label></li>
-              <li><label><input type="checkbox" name="Intereses" value="c">loooo</label></li>
-              <li><label><input type="checkbox" name="Intereses" value="d">mismo</label></li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="a"
+                  />Noooo</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="b"
+                  />copie</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="c"
+                  />loooo</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="d"
+                  />mismo</label
+                >
+              </li>
             </ul>
           </div>
           <!--campo radio-->
           <div class="campo">
             <label>Sexo</label>
             <ul class="lista-radio">
-              <li><label><input type="radio" name="sexo" value="m">Masculino</label></li> 
-              <li><label><input type="radio" name="sexo" value="f">Femenino</label></li> 
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="m" />Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="sexo" value="f" />Femenino</label
+                >
+              </li>
             </ul>
           </div>
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Enviar" />
         </form>
       </div>
     </section>
@@ -147,7 +195,9 @@
           <!-- Enlaces legales -->
           <div class="footer-links">
             <h4>Legal</h4>
-            <a href="/documentos/obtenerDocumento.pdf">Política de Privacidad</a>
+            <a href="/documentos/obtenerDocumento.pdf"
+              >Política de Privacidad</a
+            >
             <!-- Dentro de href llama a un documento pdf con la poltica-->
             <a href="#">Términos y Condiciones</a>
             <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
@@ -157,14 +207,34 @@
           <!-- Redes sociales con íconos personalizados -->
           <div class="footer-social">
             <h4>Síguenos</h4>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="social-icon" /></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Instagram" class="social-icon" /></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="social-icon" /></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145806.png" alt="Twitter" class="social-icon" /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
           </div>
         </div>
       </footer>
     </section>
-          
+    <script src="menu_toggle.js"></script>
   </body>
 </html>
