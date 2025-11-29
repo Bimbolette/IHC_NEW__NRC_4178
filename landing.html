@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img width="" height="" src="img/images.png" alt="" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="">Promociones</a></li>
+        <li>
+          <a href="">Soluciones</a>
+
+          <ul class="Menu-Vertical">
+            <li><a href="">Servicios Financieros</a></li>
+            <li><a href="">Seguros</a></li>
+            <li><a href="">Soluciones</a></li>
+            <li><a href="">Mundo Diners</a></li>
+          </ul>
+        </li>
+
+        <li><a href="">Privilegios</a></li>
+        <li><a href="">Canales</a></li>
+        <li><a href="#Contactanos">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--SECCION TOP-->
+    <section class="seccion-top">
+      <div class="div-gnral-top">
+        <div class="div-top-texto">
+          <h2>Descubre lo nuevo de nuestro Top Semanal!!</h2> 
+          <p> 
+            En esta sección, dejate sorprender con nuestras principales recomendaciones
+            de la semana, recetas sugeridas y votadas por otros usuarios que las colocan
+            en este top!
+          </p>
+          <p>
+            Recuerda que tu receta tambien puede aparecer en este ranking!
+            Solo tienes que registrarte y subir la preparación de tu platillo favorito
+            para empezar a compartir con el resto de usuarios.
+          </p>
+          <button>Leer más...</button>
+        </div> 
+
+        <div class="div-top-img">
+            <img src="Logo/rankin.png" alt=""/>
+        </div> 
+
+      </div>  
+    </section>
+
+    <!--SECCION RECETAS-->
+    
+    <section class="seccion-receta">
+      <div class="div-gnral-receta">
+        <div class="div-receta-texto">
+          <h2>Descubre nuevas recetas!!</h2> 
+          <p>
+            En esta sección, puedes descubrir nuevas e interesantes propuestas que te pueden llegar a interesar.
+            Animate a preparar estas recetas compartidas por otros usuarios
+          </p>
+          <p>
+           
+          </p>
+        </div> 
+
+        <div class="div-receta-video">
+          <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/cHZwDOqPPdM?si=cpywkfIzSSKLN2lZ" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen
+          ></iframe>
+        </div> 
+
+      </div>  
+    </section> 
+    
+    <!--FORMULARIO-->
+    <section class="Seccion-formulario" id="Contactanos">
+      <div class="div-cont-formulario">
+        <h2>Formulario de registro</h2>
+        <p>Complete todos los campos</p>
+        <form class="Formulario">
+          <!--campo nombre-->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <!--campo lista desplegable-->
+          <div class="campo">
+            <label for="pais">Pais</label>
+            <select id="pais" name="pais">
+              <option value="">seleccione un pais</option>
+              <option value="peru">Peru</option>
+              <option value="argentina">Argentina</option>
+              <option value="brazil">Brazil</option>
+            </select>
+          </div>
+          <!--campo checkbox-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li><label><input type="checkbox" name="Intereses" value="a">Noooo</label></li>
+              <li><label><input type="checkbox" name="Intereses" value="b">copie</label></li>
+              <li><label><input type="checkbox" name="Intereses" value="c">loooo</label></li>
+              <li><label><input type="checkbox" name="Intereses" value="d">mismo</label></li>
+            </ul>
+          </div>
+          <!--campo radio-->
+          <div class="campo">
+            <label>Sexo</label>
+            <ul class="lista-radio">
+              <li><label><input type="radio" name="sexo" value="m">Masculino</label></li> 
+              <li><label><input type="radio" name="sexo" value="f">Femenino</label></li> 
+            </ul>
+          </div>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </section>
+
+    <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img src="img/logodiner.png" alt="Logo" class="footer-logo" />
+            <p>Diners club</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/documentos/obtenerDocumento.pdf">Política de Privacidad</a>
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook" class="social-icon" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145812.png" alt="Instagram" class="social-icon" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="social-icon" /></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145806.png" alt="Twitter" class="social-icon" /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+          
+  </body>
+</html>

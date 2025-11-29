@@ -1,11 +1,10 @@
 .footer {
-  background-color: #222; /* Fondo oscuro para contraste */
+  background-color: darkcyan; 
   color: white;
   padding: 2rem 1rem;
   font-family: "Roboto", sans-serif;
 }
 
-/* Contenedor flexible para 3 columnas */
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -16,7 +15,6 @@
   gap: 2rem;
 }
 
-/* Marca o logotipo */
 .footer-brand {
   flex: 1;
   min-width: 200px;
@@ -28,10 +26,13 @@
   margin-bottom: 0.5rem;
 }
 
-/* Enlaces legales */
 .footer-links {
   flex: 1;
   min-width: 200px;
+}
+
+.footer-links h4 {
+  margin-bottom: 1rem;
 }
 
 .footer-links a {
@@ -45,10 +46,13 @@
   color: #fff;
 }
 
-/* Redes sociales con íconos */
 .footer-social {
   flex: 1;
   min-width: 200px;
+}
+
+.footer-social h4 {
+  margin-bottom: 1rem;
 }
 
 .social-icon {
@@ -62,7 +66,6 @@
   transform: scale(1.2);
 }
 
-/* Responsive para pantallas pequeñas */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
